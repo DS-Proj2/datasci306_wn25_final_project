@@ -14,6 +14,13 @@ library(tidyverse)
 
 The [Internet Movie Database (IMDb)]() contains information on millions of movies and television programs. They offer several [non-commercial use datasets](https://developer.imdb.com/non-commercial-datasets/) (documentation link). For this project we will analyze a **sample** of 100,000 titles from the IMDBb. 
 
+```{r}
+#load data
+name_basics <- read_rds("data/name_basics_sample.rds")
+title_basics <- read_rds("data/title_basics_sample.rds")
+title_principals <- read_rds("data/title_principals_sample.rds")
+title_ratings <- read_rds("data/title_ratings_sample.rds")
+```
 
 ## Part I: Preprocessing
 
